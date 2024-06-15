@@ -10668,7 +10668,8 @@ code {
 
 .dark-style .theme-menu-five .navbar-nav .nav-item .nav-link.active {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* color: rgb(255 255 255 / var(--tw-text-opacity)); */
+  color: #0f9692;
 }
 
 .theme-menu-five .navbar-nav .nav-item .nav-link.active,
@@ -10744,12 +10745,22 @@ code {
   --text-color: #73737b;
   --text-light: #888888;
   --heading: #101621;
-  --blue-dark: #6f55ff;
+  /* --blue-dark: #6f55ff; */
+  --blue-dark: #109592;
   --red-light: #fd6a5e;
-  --yellow-deep: #ffb840;
-  --blue-light: #3bb0d7;
+  /* --yellow-deep: #ffb840; */
+  --yellow-deep: #dce443;
+  /* --blue-light: #3bb0d7; */
+  --blue-light: #62ccca;
   --purple-blue: #655c97;
   --vin-red: #973c56;
+  --customerlogocolor1:#62ccca;
+  --customerlogocolor2:#33d5ac;
+  --customerlogocolor3:#01b0ab;
+  --customerlogocolor4:#109592;
+  --customerlogocolor5:#dce443;
+  --customerlogocolor6:#95d60a;
+
 }
 
 ::-moz-selection {
