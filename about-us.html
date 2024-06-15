@@ -25,7 +25,13 @@
 		<!-- Favicon -->
 		<!-- <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png"> -->
 		<!-- Main style sheet -->
-
+		<style>
+			
+			.signUp-action:hover{
+				box-shadow: 0px 15px 40px rgba(255,186,18,0.3);
+				background-color: #dce441;
+			}
+		</style>
 		<link rel="preconnect" href="https://fonts.googleapis.com/">
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;family=Roboto:wght@300;400;500;700&amp;family=Rubik:wght@300;400;500&amp;display=swap" rel="stylesheet">
@@ -133,7 +139,8 @@
 							<ul class="right-button-group flex items-center justify-center ml-[100px] lg:ml-[30px]">
 								
 								<li>
-									<a href="#" class="signUp-action font-medium text-[13px] leading-[45px] uppercase text-center text-[var(--heading)] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[5px] w-[155px] text-white shadow-[0px_15px_40px_rgba(161,146,250,0.35)] ml-[35px] hover:shadow-[0px_15px_40px_rgba(255,186,18,0.3)] bg-[var(--blue-dark)] hover:bg-[#ffba12]">Demo</a>
+									<a href="#" class="signUp-action font-medium text-[13px] leading-[45px] uppercase text-center text-[var(--heading)] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[5px] w-[155px] text-white shadow-[0px_15px_40px_rgba(161,146,250,0.35)] ml-[35px] hover:shadow-[0px_15px_40px_rgba(255,186,18,0.3)] bg-[var(--blue-dark)] hover:bg-[#dce441]">Demo</a>
+									<!-- <a href="#" class="signUp-action font-medium text-[13px] leading-[45px] uppercase text-center text-[var(--heading)] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[5px] w-[155px] text-white shadow-[0px_15px_40px_rgba(161,146,250,0.35)] ml-[35px] hover:shadow-[0px_15px_40px_rgba(255,186,18,0.3)] bg-[var(--blue-dark)] hover:bg-[#ffba12]">Demo</a> -->
 								</li>
 							</ul>
 						  	</div>
@@ -252,7 +259,9 @@
 					</div>
 					<div class="xl:w-6/12 xl:basis-6/12 lg:w-6/12 lg:basis-6/12 md:w-full sm:w-full xsm:w-full relative px-[15px]">
 						<div class="form-wrapper xl:pl-[65px] lg:pl-[65px] md:pl-0 md:mt-10 sm:pl-0 sm:mt-10 xsm:pl-0 xsm:mt-10">
-							<form action="#" class="relative"> <input class=" text-[16px] w-[calc(100%_-_180px)] h-[50px] font-Rubik border-transparent border-b-2 border-b-[#545454] border-solid bg-transparent focus:!border-transparent focus:!border-b-[#545454] focus:!ring-0 xsm:w-[calc(100%_-_150px)]" type="text" placeholder="Email address"> <button class=" absolute w-[150px] h-[50px] text-white font-medium text-[16px] shadow-[0_15px_30px_rgba(139,110,209,0.3)] transition-all duration-[0.3s] ease-in-out rounded-[25px] right-0 bottom-0 hover:shadow-[0px_15px_30px_rgba(255,186,18,0.2)]  bg-[var(--blue-dark)] hover:bg-[#ffba12] xsm:w-[135px] xsm:leading-[45px]">Start now</button>
+							<form action="#" class="relative"> 
+								<input class=" text-[16px] w-[calc(100%_-_180px)] h-[50px] font-Rubik border-transparent border-b-2 border-b-[#545454] border-solid bg-transparent focus:!border-transparent focus:!border-b-[#545454] focus:!ring-0 xsm:w-[calc(100%_-_150px)]" type="text" placeholder="Email address"> 
+								<button class="signUp-action absolute w-[150px] h-[50px] text-white font-medium text-[16px] shadow-[0_15px_30px_rgba(139,110,209,0.3)] transition-all duration-[0.3s] ease-in-out rounded-[25px] right-0 bottom-0 hover:shadow-[0px_15px_30px_rgba(255,186,18,0.2)]  bg-[var(--blue-dark)] hover:bg-[#dce441] xsm:w-[135px] xsm:leading-[45px]">Start now</button>
 							</form>
 							<p class="font-Rubik text-[16px] pt-2.5">Already a member? <a
 									class=" text-[var(--blue-dark)] hover:underline" href="#">Sign in.</a></p>
