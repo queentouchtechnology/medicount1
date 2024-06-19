@@ -30,16 +30,53 @@
 				box-shadow: 0px 15px 40px rgba(255,186,18,0.3);
 				background-color: #dce441;
 			}
+			.new-menu {
+    color: #2B2C2E;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+    margin: 0 20px;
+    padding: 30px 0;
+    line-height: 1.7em;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    overflow: hidden; /* Ensures pseudo-element is clipped */
+}
 
-			/* .new-menu{
-				padding: 5px;
+.new-menu::after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 34%;
+    width: 10px;
+    text-align: center;
+    height: 55px;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent; /* Initial background color */
+}
 
-			}
+.new-menu:hover {
+    color: #ffffff; /* Change text color on hover */
+    transform: translateY(-5px); /* Bounce effect */
+}
 
-			.new-menu:hover{
-				box-shadow: 0px 15px 40px rgba(255,186,18,0.3);
-                background-color: #dce441; padding: 5px;
-			} */
+
+
+
+/* Media queries if needed */
+@media (max-width: 768px) {
+    .new-menu {
+        font-size: 18px;
+        line-height: 1.7em;
+    }
+    .new-menu::after {
+        width: 10px;
+        text-align: center;
+        height: 55px;
+        right: 0;
+        top: 0;
+    }
+}
+
 		</style>
 		<link rel="preconnect" href="https://fonts.googleapis.com/">
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -125,13 +162,24 @@
 						  <div class="navbar-collapse collapse bg-white md:absolute md:bg-white md:max-h-[70vh] md:overflow-y-auto md:shadow-[0px_40px_50px_0px_rgba(137,139,142,0.15)] md:origin-[100%_0] md:opacity-0 md:invisible md:transition-all md:duration-[0.3s] md:ease-[ease-in-out] md:scale-x-100 md:scale-y-0 md:top-full md:inset-x-0 sm:absolute sm:bg-white sm:max-h-[70vh] sm:overflow-y-auto sm:shadow-[0px_40px_50px_0px_rgba(137,139,142,0.15)] sm:origin-[100%_0] sm:opacity-0 sm:invisible sm:transition-all sm:duration-[0.3s] sm:ease-[ease-in-out] sm:scale-x-100 sm:scale-y-0 sm:top-full sm:inset-x-0 xsm:absolute xsm:bg-white xsm:max-h-[70vh] xsm:overflow-y-auto xsm:shadow-[0px_40px_50px_0px_rgba(137,139,142,0.15)] xsm:origin-[100%_0] xsm:opacity-0 xsm:invisible xsm:transition-all xsm:duration-[0.3s] xsm:ease-[ease-in-out] xsm:scale-x-100 xsm:scale-y-0 xsm:top-full xsm:inset-x-0" id="navbarSupportedContent">
 						  	<div class="xl:flex lg:flex items-center block">
 						  <ul class="navbar-nav font-Rubik flex flex-col mb-0 pl-0">
-						  	<li class="nav-item dropdown !static">
+						  	<!-- <li class="nav-item dropdown !static">
 										<a class="nav-link new-menu 										
 							dropdown-toggle block text-[#2B2C2E] text-[18px] capitalize relative transition-all duration-[0.3s] ease-[ease-in-out] m-[0_20px] p-[30px_0] leading-[1.7em] after:text-[10px] after:absolute after:right-[-15px] after:text-inherit after:transition-all after:duration-[0.3s] after:ease-[ease-in-out] after:border-[none] after:top-[34%] after:font-Flaticon after:inline-block after:ml-[0.255em] md:after:w-10 md:after:text-center md:after:leading-[55px] md:after:right-0 md:after:top-0 sm:after:w-10 sm:after:text-center sm:after:leading-[55px] sm:after:right-0 sm:after:top-0 xsm:after:w-10 xsm:after:text-center xsm:after:leading-[55px] xsm:after:right-0 xsm:after:top-0 lg:m-[0_18px] lg:text-[18px] lg:leading-[1.7em] md:text-[18px] sm:text-[18px] xsm:text-[18px]" aria-expanded="false" href="#">Who we are</a>
-										
-								 
-									</li>
-								<li class="nav-item dropdown relative group">
+							 -->
+							<li class="nav-item dropdown">
+								<a class="nav-link new-menu dropdown-toggle" href="#" aria-expanded="false">Who we are</a>
+							  </li>
+
+							  <li class="nav-item dropdown relative group">
+								<a class="nav-link new-menu dropdown-toggle" href="#">Who we serve</a>
+						</li>
+						<li class="nav-item dropdown relative group mega-dropdown-md active">
+							<a  class="nav-link new-menu dropdown-toggle" href="#">Why Medicount</a>
+						</li>
+						  <li class="nav-item dropdown relative group">
+							<a  class="nav-link new-menu dropdown-toggle" href="#">How we do it</a>
+							</li>
+								<!-- <li class="nav-item dropdown relative group">
 										<a class="nav-link dropdown-toggle block text-[#2B2C2E] text-[18px] capitalize relative transition-all duration-[0.3s] ease-[ease-in-out] m-[0_20px] p-[30px_0] leading-[1.7em]  after:text-[10px] after:absolute after:right-[-15px] after:text-inherit after:transition-all after:duration-[0.3s] after:ease-[ease-in-out] after:border-[none] after:top-[34%] after:font-Flaticon after:inline-block after:ml-[0.255em] md:after:w-10 md:after:text-center md:after:leading-[55px] md:after:right-0 md:after:top-0 sm:after:w-10 sm:after:text-center sm:after:leading-[55px] sm:after:right-0 sm:after:top-0 xsm:after:w-10 xsm:after:text-center xsm:after:leading-[55px] xsm:after:right-0 xsm:after:top-0 group-hover:text-[var(--blue-dark)] lg:m-[0_18px] lg:text-[18px] lg:leading-[1.7em] md:text-[18px] sm:text-[18px] xsm:text-[18px]" href="#">Who we serve</a>
 								
 									
@@ -143,7 +191,7 @@
 								</li>
 								  <li class="nav-item dropdown relative group">
 									<a class="nav-link dropdown-toggle block text-[#2B2C2E] text-[18px] capitalize relative transition-all duration-[0.3s] ease-[ease-in-out] m-[0_20px] p-[30px_0] leading-[1.7em]  after:text-[10px] after:absolute after:right-[-15px] after:text-inherit after:transition-all after:duration-[0.3s] after:ease-[ease-in-out] after:border-[none] after:top-[34%] after:font-Flaticon after:inline-block after:ml-[0.255em] md:after:w-10 md:after:text-center md:after:leading-[55px] md:after:right-0 md:after:top-0 sm:after:w-10 sm:after:text-center sm:after:leading-[55px] sm:after:right-0 sm:after:top-0 xsm:after:w-10 xsm:after:text-center xsm:after:leading-[55px] xsm:after:right-0 xsm:after:top-0 group-hover:text-[var(--blue-dark)] lg:m-[0_18px] lg:text-[18px] lg:leading-[1.7em] md:text-[18px] sm:text-[18px] xsm:text-[18px]" href="#">How we do it</a>
-									</li>
+									</li> -->
 								
 						</ul>
 							<ul class="right-button-group flex items-center justify-center ml-[100px] lg:ml-[30px]">
